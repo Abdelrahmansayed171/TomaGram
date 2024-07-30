@@ -1,21 +1,28 @@
-import { useEffect, useState } from 'react'
 import './index.css'
-import useTheme from './contexts/ThemeContext/useTheme';
+import { Routes, Route } from "react-router-dom";
+import SigninForm from './_auth/forms/SigninForm';
+import SignupForm from './_auth/forms/SignupForm';
+import AuthLayout from './_auth/AuthLayout';
 
 function App() {
 
-  const { toggleDarkMode } = useTheme();
-
   return (
-    <>
-    <div className='bg-white dark:bg-slate-700 py-11 justify-center min-h-52 w-screen flex content-center'>
-      <h1 className="dark:text-white text-4xl font-bold underline font-poppins">
-        Hello world!
-      </h1>
-    </div>
-      
-      <button onClick={toggleDarkMode}>toggle</button>
-    </>
+    <main className='flex h-screen'>
+      <Routes>
+
+        {/* public routes */}
+        <Route  element={<AuthLayout />}>
+          <Route path="/sign-in" element={<SigninForm />} />          
+          <Route path="/sign-up" element={<SignupForm />} />          
+        </Route>
+
+        {/* private routes */}
+        <Route>
+
+        </Route>
+
+      </Routes>
+    </main>
   )
 }
 

@@ -1,0 +1,5 @@
+firstly we will break the project into 2 set of routes
+each group of routes has specific layout 
+1. _authenticated which will consider the signin, signup forms 
+2. _public consider homepage and the entire app (need to be authenticated first)
+3. now we implments the layout and the forms with shadcn
