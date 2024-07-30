@@ -1,0 +1,8 @@
+1. set up tailwind.css 
+2. add tailwind plugins and install it
+3. install react-router-dom 
+4. restructure the react app
+5. develop public routes/ folders private routes/folders
+6. download shadcn
+7. install zod (typescript validation library)
+8.    
