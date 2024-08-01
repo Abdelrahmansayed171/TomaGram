@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-
-// const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   darkMode: ['class'],
@@ -45,8 +44,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
+
       },
       keyframes: {
         'accordion-down': {
